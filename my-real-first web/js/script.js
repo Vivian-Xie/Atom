@@ -29,6 +29,15 @@ function say(ee){
   let name=ee
 }
 
+canvas{
+}
+canvas {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+
 function setup (){
   createCanvas(500,500);
   rectMode(CENTER);
