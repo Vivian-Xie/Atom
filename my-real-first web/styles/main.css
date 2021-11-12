@@ -21,3 +21,9 @@ a {
 #logo{
   margin-left:20px
 }
+
+canvas {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
