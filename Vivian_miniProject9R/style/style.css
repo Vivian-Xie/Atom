@@ -1,0 +1,90 @@
+p{
+  padding:8px
+letter-spacing:normal;span;hover}
+h1{
+  font-family: "Damion";
+  letter-spacing: 10px;
+  text-shadow: 7px 7px rgb(140,110,108);
+  color: rgb(255,255,255);
+    margin-left:20px;
+    font-size: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2{
+
+font-weight: bolder;
+    margin-left:60px;
+    font-size: 25px
+
+}
+h2.sign{
+  font-family: "Damion";
+font-weight: bolder;
+  letter-spacing: 3px;
+    font-size: 70px;
+  color: rgb(255,255,255);
+  text-shadow: 3px 3px rgb(140,110,108);
+    margin-left:20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+p.lyric2 {
+  margin-left:10px;
+  font-family: "Courgette";
+  font-size: 20px;
+  font-weight: bolder;
+    color:rgb(0,0,0)
+}
+p.lyric2:hover {
+  background-color: rgba(120,120,120,0.3);
+  font-size: 30px;
+}
+a.menu:link {
+  text-shadow: 3px 3px rgb(140,110,108);
+  font-family: "Courgette";
+  color: rgb(255,255,255);
+  font-size: 70px
+}
+
+a.menu:visited {
+  font-family: "Courgette";
+  text-shadow: 3px 3px rgb(140,110,108);
+  color: rgb(255,255,255)
+}
+
+a.menu:hover {
+  color:rgb(140,110,108)
+}
+
+a.return{
+  margin-top: 15px;
+  font-family: "Courgette";
+  font-size: 20px;
+  font-weight: bolder;
+    color:rgb(0,0,0);
+    text-shadow: 0px 0px white;
+ margin-left: 30px;
+  margin-bottom: 20px;
+ 
+}
+
+a.return:hover {
+  background-color: rgba(0,0,0,0.05);
+  color:rgba(0,0,0,0.6)
+}
+body {
+  background-image: url("Vivian_miniProject9R/images/snowbell.jpg");
+  position: relative;
+}
+ul{
+  font-size: 24px;
+  margin-right: 30px;
+
+}
+body.intro{
+  font-size: 20px;
+  font-family: fantasy;
+  text-decoration-color: rgba(141,188,197,0.6);
+}

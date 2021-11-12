@@ -1,0 +1,23 @@
+body{
+  font-family: "Courgette";
+  background-color:pink
+}
+
+h1{
+  color: blue
+}
+p {
+  font-size: 22px
+}
+a {
+  color: blue;
+  text-decoration: line-through;
+}
+
+.info_text{
+  background-color: green
+}
+
+#logo{
+  margin-left:20px
+}
