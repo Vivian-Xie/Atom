@@ -1,0 +1,27 @@
+body{
+  background-color: black
+}
+.p5js{
+  margin-left: 70px
+}
+h1{
+  color :white;
+  font-size: 80px;
+  margin-left: 30px
+}
+input {
+  margin-left: 20px;
+  width:30%;
+}
+.slider{
+  display: inline;
+  width:10%;
+}
+button{
+  font-size: 30px;
+  color:rgb(255,255,255);
+  background-color: rgb(0,0,0)
+}
+button:hover{
+  background: gray
+}

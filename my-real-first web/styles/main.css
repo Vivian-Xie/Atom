@@ -15,11 +15,11 @@ a {
 }
 
 .info_text{
-  background-color: green
+  background-color: green;
 }
 
 #logo{
-  margin-left:20px
+  margin-left:20px;
 }
 
 canvas {
