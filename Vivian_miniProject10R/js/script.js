@@ -10,7 +10,7 @@ function preload() {
 
 function setup() {
     let cnv = createCanvas(700,700);
-  cnv.mousePressed(userStartAudio); // ***
+  cnv.mousePressed(userStartAudio);
 
   amplitude = new p5.Amplitude();
   background(0, 0, 0);
@@ -99,15 +99,23 @@ function draw() {
   let ball = map(cos(number) * 10*level, -1, 1, 0, 50);
   // ellipse(0, 0, ball, ball);
   pop();
-
-
 }
 
-let roundButton= document.getElementById('button');
-roundButton.addEventListener('click',sing2);
+
+
 function sing() {
   song.loop();
 }
+
+let haha=document.getElementById("button")
   function sing2(){
-      song.pause()
+    if(haha.innerHTML=="Pause"){
+    song.pause()
+    haha.innerHTML="Play"
+  }else{
+    song.play()
+  haha.innerHTML="Pause"}
+
+    // button.appendChild(bad);
+
   }
