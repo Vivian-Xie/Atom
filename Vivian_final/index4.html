@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vivian's final</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+  <script src="js/p5.js">
+      </script>
+  <script src="js/p5.sound.js">
+
+  </script>
+  <script type="text/javascript">
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+<style>
+.headings{
+  color:white;
+  background-color: rgb(251,223,62);
+  font-family: Libre Baskerville;
+  font-size: 30px;
+}
+
+.slide{
+  width:1800px;
+  height:960px;
+  position: absolute;
+  float:left;
+  left:60%;
+  top:57%;
+  transform: translate(-55%,-55%);
+  overflow: hidden;
+    z-index: 0.1;
+}
+.slide input{
+  position:fixed;
+  float:right;
+  bottom:10px;
+    z-index: 0.1;
+}
+#img1{
+  left:40px;
+}
+#img2{
+  left:80px;
+}
+#img3{
+  left:120px;
+}
+
+.images{
+  position:absolute;
+  top: 15%;
+  left: 1%;
+  width:6400px;
+  height:960px;
+  display:flex;
+  z-index: 0.1;
+}
+.image{
+  width:2800px;
+  height:960px;
+  transition: 0.8s linear;
+    z-index: 0.1;
+}
+.image img{
+  height:100%;
+}
+#img1:checked ~ .first{
+  margin-left:0%;
+}
+#img2:checked ~ .first{
+  margin-left:-44%;
+}
+#img3:checked ~ .first{
+  margin-left:-88%;
+}
+#qilin{
+  width:100px;
+  height:200px;
+}
+.p5{
+  width:100px;
+  height:200px;
+  position: relative;
+  z-index: 1;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="headings">
+<h1 id="heading">Shanghai South Railway Station</h1>
+<h2 id="name">Line 3</h2>
+    </div>
+<div class="p5">
+  <script id="qilin"src="js/qilinSouth.js"style="width:400px;height:360px">
+      </script>
+</div>
+<div class="slide">
+        <div class="images">
+            <input type="radio" name="img" id="img1" checked="">
+            <input type="radio" name="img" id="img2">
+            <input type="radio" name="img" id="img3">
+
+            <div class="image first">
+                <img src="images/上海南站1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="images/上海南站2.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="images/上海南站3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </body>
+</html>
